@@ -120,7 +120,7 @@ header{
   position:relative; 
   z-index:1; 
   padding:110px 0 90px; 
-  text-align:left; /* Align to left */
+  text-align:left; 
 }
 
 .hero-container {
@@ -134,7 +134,7 @@ header{
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left align child elements */
+  align-items: flex-start; 
 }
 
 .badge{
@@ -263,7 +263,7 @@ h1.hero-name {
   transform: translateY(-3px);             
 }
 
-/* --- Right Side Profile Image Styles --- */
+
 .hero-image-wrapper {
   flex: 0.8;
   display: flex;
@@ -275,7 +275,7 @@ h1.hero-name {
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  padding: 6px; /* Gradient border width */
+  padding: 6px; 
   background: linear-gradient(135deg, var(--grad-a), var(--grad-b), var(--grad-c));
   box-shadow: 0 0 35px rgba(165, 76, 248, 0.25);
   display: flex;
@@ -291,7 +291,7 @@ h1.hero-name {
   background: var(--bg-soft, #0d0e15);
 }
 
-/* Mobile Responsive adjustment */
+
 @media (max-width: 850px) {
   .hero-container {
     flex-direction: column-reverse;
@@ -567,7 +567,7 @@ h1.hero-name {
   background:var(--bg-soft);
 }
 
-/*projects*/
+
 
 .project-toggle{
   display:flex; 
@@ -851,6 +851,24 @@ h1.hero-name {
 .contact-info .social-row .social-btn { 
   width: 38px; 
   height: 38px; 
+}
+
+@media screen and (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; 
+    gap: 32px;
+    padding: 0 16px; 
+  }
+
+  .contact-form {
+    padding: 24px 18px; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
 }
 footer{ 
   padding:36px 32px; 
