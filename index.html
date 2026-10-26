@@ -6,7 +6,8 @@
 <title>Shachini Madara — Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,51 +16,63 @@
 
 <div class="glow"></div>
 
-<header>
-  <nav class="wrap">
-    <div class="nav-pill">
-      <div class="nav-mark">Shachini Madara</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="nav-cta" href="#contact">Contact</a>
+<header class="site-header" id="siteHeader">
+  <div class="nb-wrap">
+    <a href="#home" class="nb-logo">
+      <span class="nb-mark">SM</span>
+      <span class="nb-logo-text">
+        <span class="nb-name">Shachini Madara</span>
+        <span class="nb-sub">SOFTWARE ENGINEER</span>
+      </span>
+    </a>
+
+    <ul class="nb-links" id="nbLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
+    <div class="nb-right">
+      <a href="#contact" class="nb-cta">Contact Me</a>
+      <button class="nb-burger" id="nbBurger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
     </div>
-  </nav>
+  </div>
 </header>
 
-<section id="home" class="hero wrap">
-  <div class="hero-container">
-    <div class="hero-content">
-      <div class="badge"><span class="dot"></span>Open to Software Engineering Internships</div>
-      <h1 class="hero-name">Hi, I'm Shachini Madara</h1>
-      <div class="hero-role">Software Engineering Undergraduate</div>
+<section id="home" class="hr-section">
+  <div class="hr-container">
 
-      <p class="hero-tagline">I am a motivated and dedicated Software Engineering undergraduate with a strong passion for technology, teamwork, and effective communication.</p>
+    <div class="hr-left">
+      <div class="hr-badge"><span class="hr-dot"></span>SOFTWARE ENGINEERING UNDERGRADUATE</div>
+
+      <h1 class="hr-title">Hi, I'm <span class="hr-grad">Shachini Madara.</span></h1>
+
       
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View My Projects</a>
-        <a href="./assets/R.P.Shachini Madara-CV.pdf" download class="btn btn-secondary">Download CV</a>
+
+      <p class="hr-text">I'm a Software Engineering undergraduate passionate about building modern, responsive, and user-friendly digital experiences. I enjoy transforming ideas into practical applications using modern web technologies, creative design, and problem-solving.</p>
+
+      <div class="hr-buttons">
+        <a href="#projects" class="hr-btn hr-btn-primary">Explore My Projects <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="./assets/R.P.Shachini_Madara_CV.pdf" target="_blank" class="hr-btn hr-btn-outline"><i class="fa-regular fa-eye"></i> View My CV</a>
+        
       </div>
-      
-      <div class="hero-actions">
-        <div class="social-links">
-          <a href="https://github.com/Smadara" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/shachini-madara-0b3883257" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+
+      <div class="hr-find">
+        <span class="hr-find-label">FIND ME:</span>
+        <a href="https://github.com/Smadara" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/shachini-madara-0b3883257" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
 
-    <div class="hero-image-wrapper">
-      <div class="profile-glow-circle">
-
-        <img src="./assets/profile.jpg.jpg" alt="Shachini Madara" class="profile-img" />
+    <div class="hr-right">
+      <div class="hr-frame">
+        <img src="./assets/profile.jpg.jpg" alt="Shachini Madara" class="hr-photo">
+        <div class="hr-label"><span class="hr-dot hr-dot-purple"></span>Software Engineering Undergraduate</div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -67,14 +80,14 @@
 <section id="about">
   <div class="wrap">
     <div class="about-head">
-      <div class="eyebrow" style="margin:0 auto 20px;">About me</div>
-      <h2 class="about-title">Who I Am </h2>
+      <div class="eyebrow">About me</div>
+      <h2 class="about-title">A little about my journey, passion, and goals. </h2>
     </div>
     
     
     <div class="about-grid">
       <div class="about-text">
-        <p>Third year BSc (Honours) Software Engineering undergraduate at NSBM Green University with a strong interest in software development, emerging technologies, problem solving, and building practical digital solutions. I am also have hands-on experience with front-end web development, back-end, basic mobile application development, and UI/UX prototyping using Figma.</p>
+        <p>Hello, I'm Shachini Madara, Third year BSc (Honours) Software Engineering undergraduate at NSBM Green University with a strong interest in software development, emerging technologies, problem solving, and building practical digital solutions.I enjoy designing and developing attractive, responsive, and user-friendly applications that solve practical problems.<p> I am also have hands-on experience with front-end web development, back-end, basic mobile application development, and UI/UX prototyping using Figma.</p>
         <p>I'm looking for an internship where I can work on real production code, learn from engineers who've solved these problems before, and contribute from day one instead of sitting on the sidelines. I am eager to bring my problem-solving mindset, technical skills, and passion for clean architecture to a dynamic development team.</p>
         
         <blockquote class="about-goal">
@@ -127,7 +140,7 @@
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Education</div>
-      <h2 class="section-title">Currently Studying</h2>
+      <h2 class="section-title">My academic journey and professional development.</h2>
     </div>
     
     <div class="edu-card">
@@ -139,13 +152,67 @@
             NSBM Green University
           </div>
         </div>
-        <div class="edu-card-date">Nov 2023 — Present</div>
+        <div class="edu-card-date">November 2023 - November 2027</div>
       </div>
       <ul class="edu-highlights">
-        <li>A hands-on engineering program with a strong focus on data structures, algorithms, and software design.</li>
-        <li>Relevant coursework includes Data Structures & Algorithms, Software Architecture, Database Management Systems, and Object-Oriented Programming.</li>
+        Currently pursuing a BSc (Hons) in Software Engineering at NSBM Green University, building practical knowledge in programming, web development, database management, algorithms, and software design through academic studies and projects.
         
       </ul>
+      <div class="education-details">
+        <h4>Relevant Academic Areas</h4>
+      
+        <ul class="academic-areas">
+          <li>Software Engineering Principles</li>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Web Application Development</li>
+          <li>Software Design and Development</li>
+          <li>Software Testing and Quality Assurance</li>
+          <li>Mobile Application Development</li>
+        </ul>
+      </div>
+    </div>
+    <div class="edu-extra-grid">
+
+      
+      <div class="edu-mini-card">
+        <div class="edu-mini-head">
+          <div class="edu-mini-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h3 class="edu-mini-title">Diploma in English</h3>
+            <div class="edu-mini-school">BritishWay English Academ - Matara</div>
+          </div>
+        </div>
+        <div class="edu-card-date">June 2022- Nov 2022</div>
+        <p class="edu-mini-desc">Completed a structured Diploma in English programme, strengthening professional communication, academic writing, reading comprehension, and spoken English proficiency.</p>
+        <div class="edu-mini-label">Areas Covered:</div>
+        <div class="edu-mini-tags">
+          <span>Professional Communication</span>
+          <span>Academic Writing</span>
+          <span>Reading Comprehension</span>
+          <span>Spoken English</span>
+        </div>
+      </div>
+    
+      
+      <div class="edu-mini-card">
+        <div class="edu-mini-head">
+          <div class="edu-mini-icon"><i class="fa-solid fa-school"></i></div>
+          <div>
+            
+            <h3 class="edu-mini-title">G.C.E. Advanced Level – Technology Stream</h3>
+            <div class="edu-mini-school">H/Tangalle Balika Vidyalaya</div>
+          </div>
+        </div>
+        <div class="edu-card-date">2019 - 2021</div>
+
+        <p class="edu-mini-desc">Completed the G.C.E. Advanced Level examination in the Technology stream, building a strong foundation in analytical thinking and problem solving.</p>
+        
+          
+        </div>
+      </div>
+    
     </div>
   </div>
 
@@ -156,48 +223,58 @@
 <section id="skills">
   <div class="wrap">
     <div class="about-head">
-      <div class="eyebrow">Skills</div>
-      <h2 class="about-title">What I work with</h2>
+      <div class="eyebrow">Technical Skills</div>
+      <h2 class="about-title">Technologies and tools I use to build digital solutions.</h2>
     </div>
 
     <div class="skills-grid">
       <div class="skill-card">
-        <div class="skill-title">Frontend</div>
+        <div class="skill-title">Frontend Development </div>
         <div class="pill-row">
-          <span class="pill">HTML5</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">React.js</span><span class="pill">Tailwind CSS</span><span class="pill">Next.js</span>
+          <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">React.js</span><span class="pill">Tailwind CSS</span><span class="pill">Next.js</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-title">Backend</div>
+        <div class="skill-title">Backend Development</div>
         <div class="pill-row">
           <span class="pill">Node.js</span><span class="pill">Spring Boot</span><span class="pill">REST APIs</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-title">Databases</div>
+        <div class="skill-title">Databases Technologies</div>
         <div class="pill-row">
           <span class="pill">MySQL</span><span class="pill">PostgreSQL</span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-title">Programming</div>
+        <div class="skill-title">Programming Languages</div>
         <div class="pill-row">
           <span class="pill">Java</span><span class="pill">python</span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-title">Tools &amp; Platforms</div>
+        <div class="skill-title">Mobile Development</div>
+        <div class="pill-row">
+          <span class="pill">React Native</span><span class="pill">Dart</span><span class="pill">Flutter</span>
+        </div>
+      </div>
+
+        <div class="skill-card">
+          <div class="skill-title">UI/UX and Design</div>
+          <div class="pill-row">
+            <span class="pill">Figma</span><span class="pill">Canva</span><span class="pill">Responsive Web Design</span>
+          </div>
+        </div>
+
+      <div class="skill-card">
+        <div class="skill-title">Development Tools & Technologies</div>
         <div class="pill-row">
           <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Android Studio</span><span class="pill">Figma</span>
         </div>
       </div>
-      <div class="skill-card">
-        <div class="skill-title">Mobile Development</div>
-        <div class="pill-row">
-          <span class="pill">Flutter</span><span class="pill">Dart</span>
-        </div>
+      
       </div>
     </div>
   </div>
@@ -207,123 +284,139 @@
 <section id="projects">
   <div class="wrap">
     <div class="about-head">
-      <div class="eyebrow">Projects</div>
+      <div class="eyebrow">Featured Projects</div>
       <p class="about-subtitles">A showcase of web applications and mobile apps I've built.</p>
     </div>
 
+    <div class="pc-grid">
+
+      <article class="pc-card">
+        <div class="pc-thumb">
+          <img src="./assets/ShopEasy.png.png" alt="Candy World preview" loading="lazy">
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Full-Stack Web Development </div>
+          <h3 class="pc-title">ShopEasy E-Commerce Website</h3>
+          <p class="pc-desc">A full-stack e-commerce web application developed using React.js, Node.js, Express.js, and MySQL. The application provides product browsing, search, user authentication, shopping cart management, checkout, order tracking, and an admin dashboard for product and order management.</p>
+          <div class="pc-stack">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Tailwind CSS</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/shopeasy-ecommerce-app" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://shopeasy-ecommerce-app-indol.vercel.app/" target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+        <div class="pc-thumb">
+          <img src="./assets/Blog.png.png" alt="Candy World preview" loading="lazy">
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Full-Stack Web Development </div>
+          <h3 class="pc-title">The Blog E-Commerce Website</h3>
+          <p class="pc-desc">A blog application built with Next.js and React, featuring a PostgreSQL database managed through Prisma ORM. The application allows users to create, view, edit, and manage blog posts through a responsive web interface.</p>
+          <div class="pc-stack">
+            <span>React.js</span><span>Next.js</span><span>PostgreSQL</span><span>Tailwind CSS</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/Blog-App" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://blog-app-eosin-eta-62.vercel.app/" target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+        <div class="pc-thumb">
+          <img src="./assets/Bloom.png.png" alt="Candy World preview" loading="lazy">
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Full-Stack Web Development </div>
+          <h3 class="pc-title">Bloom Responsive Flower Shop Website</h3>
+          <p class="pc-desc">Designed and developed a responsive flower shop website using HTML5 and CSS3, including a navigation bar, hero section, product cards, customer reviews, contact form, and mobile-friendly layouts.</p>
+          <div class="pc-stack">
+            <span>HTML5</span><span>CSS3</span><span>CSS Grid</span><span>Flexbox</span><span>Responsive Design</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/Flower-Shop-Website" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://smadara.github.io/Flower-Shop-Website/" target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+        <div class="pc-thumb">
+          <img src="./assets/projects/candy-world.png" alt="Candy World preview" loading="lazy">
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Full-Stack Web Development </div>
+          <h3 class="pc-title">Inventory Management System</h3>
+          <p class="pc-desc">A full-stack inventory management system built to help businesses track products, suppliers, and orders in real time. The backend is built with Spring Boot and exposes RESTful APIs secured with JWT-based authentication, while the frontend uses React for a responsive, interactive dashboard.</p>
+          <div class="pc-stack">
+            <span>React.js</span><span>Spring Boot</span><span>JWT authentication</span><span>MySQL</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/Inventory_Management_System" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href=" " target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+        <div class="pc-thumb">
+          <img src="./assets/Travel.png.png" alt="Candy World preview" loading="lazy">
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Frondend Development</div>
+          <h3 class="pc-title">Travel Destination Simple Website</h3>
+          <p class="pc-desc">A visually appealing, fully responsive static travel website designed for "Skyline Agency". It showcases top global travel destinations.</p>
+          <div class="pc-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/travel-destination-website-" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://smadara.github.io/travel-destination-website-/" target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+       
+        <div class="pc-body">
+          <div class="pc-cat">Frontend Development </div>
+          <h3 class="pc-title">Notes Web Application</h3>
+          <p class="pc-desc">A clean and interactive web-based note-taking application designed to create, edit, delete, and organize daily thoughts.</p>
+          <div class="pc-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Smadara/shopeasy-ecommerce-app" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://shopeasy-ecommerce-app-indol.vercel.app/" target="_blank" class="pc-demo">Live Demo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc-card">
+      
+        <div class="pc-body">
+          <div class="pc-cat">Mobile App Development </div>
+          <h3 class="pc-title">Prana-AID Group Project</h3>
+          <p class="pc-desc">An emergency response mobile app designed device-width a clean, intuitive mobile app that helps to emergency services. I Developed the “Fainting Response Module” using Flutter/Dart to
+            provide critical assistance  during medical emergencies.</p>
+          <div class="pc-stack">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+          </div>
+          <div class="pc-actions">
+            <a href="https://github.com/Praneeth108/prana_ai" target="_blank" class="pc-repo">Respotiory <i class="fa-solid fa-arrow-right"></i></a>
+      
+          </div>
+        </div>
+      </article>
+
     
-    <div class="project-grid">
-
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">Bloom | Responsive Flower Shop Website</div>
-          <div class="project-tag">Frontend Website</div>
-        </div>
-        <p class="project-desc">Designed and developed a responsive flower shop website using HTML5 and CSS3, including a navigation bar, hero section, product cards, customer reviews, contact form, and mobile-friendly layouts.</p>
-        <div class="project-stack">
-          <span class="stack-tag">HTML5</span><span class="stack-tag">CSS3</span><span class="stack-tag">CSS Grid</span><span class="stack-tag">Flexbox</span><span class="stack-tag">Responsive Design</span>
-        </div>
-        <div class="project-links">
-          <a href="https://smadara.github.io/Flower-Shop-Website/">Live demo ↗</a>
-          <a href="https://github.com/Smadara/Flower-Shop-Website">Repository ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">ShopEasy – Full-Stack E-commerce Website</div>
-          <div class="project-tag">Full-Stack Web Application</div>
-        </div>
-        <p class="project-desc">A full-stack e-commerce web application developed using React.js, Node.js, Express.js, and MySQL. The application provides product browsing, search, user authentication, shopping cart management, checkout, order tracking, and an admin dashboard for product and order management.</p>
-        <div class="project-stack">
-          <span class="stack-tag">React.js</span><span class="stack-tag">Node.js</span><span class="stack-tag">Express.js</span><span class="stack-tag">MySQL</span><span class="stack-tag">Tailwind CSS</span>
-        </div>
-        <div class="project-links">
-          <a href="https://shopeasy-ecommerce-app-indol.vercel.app/">Live demo ↗</a>
-          <a href="https://github.com/Smadara/shopeasy-ecommerce-app">Repository ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">Blog application</div>
-          <div class="project-tag">Full-Stack Web Application </div>
-        </div>
-        <p class="project-desc">A blog application built with Next.js and React, featuring a PostgreSQL database managed through Prisma ORM. The application allows users to create, view, edit, and manage blog posts through a responsive web interface.</p>
-        <div class="project-stack">
-          <span class="stack-tag">React.js</span><span class="stack-tag">Next.js</span><span class="stack-tag">PostgreSQL(supabase)</span> <span class="stack-tag">Tailwind CSS</span>
-        </div>
-        <div class="project-links">
-          <a href="https://blog-app-eosin-eta-62.vercel.app/">Live demo ↗</a>
-          <a href=" https://github.com/Smadara/Blog-App">Repository ↗</a>
-        </div>
-      </article>
 
       
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">Inventory Management System</div>
-          <div class="project-tag">Full-Stack Web Application</div>
-        </div>
-        <p class="project-desc">A full-stack inventory management system built to help businesses track products, suppliers, and orders in real time. The backend is built with Spring Boot and exposes RESTful APIs secured with JWT-based authentication, while the frontend uses React for a responsive, interactive dashboard.</p>
-        <div class="project-stack">
-          <span class="stack-tag">React.js</span><span class="stack-tag">Spring Boot</span><span class="stack-tag">Spring Security (JWT)</span><span class="stack-tag">MySQL</span>
-        </div>
-        <div class="project-links">
-          
-          <a href="https://github.com/Smadara/Inventory_Management_System">Repository ↗</a>
-        </div>
-      </article>
 
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">Travel Destination App</div>
-          <div class="project-tag">Frontend</div>
-        </div>
-        <p class="project-desc">A visually appealing, fully responsive static travel website designed for "Skyline Agency". It showcases top global travel destinations.</p>
-        <div class="project-stack">
-          <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span>
-        </div>
-        <div class="project-links">
-          <a href="https://smadara.github.io/travel-destination-website-/">Live demo ↗</a>
-          <a href="https://github.com/Smadara/travel-destination-website-">Repository ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="development">
-        <div class="project-top">
-          <div class="project-title">Notes App</div>
-          <div class="project-tag">Frontend</div>
-        </div>
-        <p class="project-desc">A clean and interactive web-based note-taking application designed to create, edit, delete, and organize daily thoughts.</p>
-        <div class="project-stack">
-          <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span>
-        </div>
-        <div class="project-links">
-          <a href="https://smadara.github.io/Notes-App/">Live demo ↗</a>
-          <a href="https://github.com/Smadara/Notes-App">Repository ↗</a>
-        </div>
-      </article>
-      
-      
-     
-
-     
-      <article class="project-card" data-category="design" hidden>
-        <div class="project-top">
-          
-          <div class="project-title">Prana-Aid <p>Group Project</p></div>
-          <div class="project-tag">Mobile App</div>
-        </div>
-        <p class="project-desc">An emergency response mobile app designed device-width a clean, intuitive mobile app that helps to emergency services. I Developed the “Fainting Response Module” using Flutter/Dart to
-          provide critical assistance  during medical emergencies.</p>
-        <div class="project-stack">
-          <span class="stack-tag">Flutter</span><span class="stack-tag">Dart</span><span class="stack-tag">Firebase</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Praneeth108/prana_ai">Repository ↗</a>
-        </div>
-      </article>
     </div>
   </div>
 </section>

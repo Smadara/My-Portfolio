@@ -11,6 +11,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  (function(){
+    const links = document.querySelectorAll('.nb-links a');
+    const sections = [...links].map(a => document.querySelector(a.getAttribute('href')));
+  
+    function onScroll(){
+      const y = window.scrollY + 140;
+      let current = 0;
+      sections.forEach((s, i) => { if(s && s.offsetTop <= y) current = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === current));
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  })();
+  
+  /* ===== Mobile menu ===== */
+  (function(){
+    const burger = document.getElementById('nbBurger');
+    const menu = document.getElementById('nbLinks');
+    if(!burger) return;
+    burger.addEventListener('click', () => menu.classList.toggle('open'));
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+  })();
   
   var toggleButtons = document.querySelectorAll('.toggle-btn');
   var projectCards = document.querySelectorAll('.project-card');
