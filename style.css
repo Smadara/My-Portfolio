@@ -72,7 +72,15 @@ section{
   font-family:'JetBrains Mono',monospace;
 }
 
-
+.hr-badge-open{
+  color:var(--green);
+  background:rgba(62,207,142,.08);
+  border-color:rgba(62,207,142,.3);
+}
+.hr-badge-open .hr-dot{
+  background:var(--green);
+  box-shadow:0 0 8px var(--green);
+}
 
 
 .site-header{
