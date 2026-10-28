@@ -553,7 +553,7 @@ section{
   transform:translateY(-3px); 
 }
 .skill-title{ 
-  font-size:16px; 
+  font-size:20px; 
   font-weight:700; 
   color:#fff; 
   margin-bottom:14px;
@@ -562,15 +562,31 @@ section{
   display:flex; 
   flex-wrap:wrap;
    gap:8px; }
+
 .pill{
-  font-size:13px; 
-  font-weight:500;
-  padding:6px 13px;
-   border-radius:999px;
-  border:1px solid var(--border);
-  color:var(--text-soft); 
-  background:var(--bg-soft);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    font-weight:550;
+    padding:7px 14px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    color:#e6e9f2;
+    background:var(--bg-soft);
+    transition:transform .2s ease, border-color .2s ease;
 }
+
+.pill:hover{
+  border-color:var(--accent);
+  transform:translateY(-2px);
+}
+.pill i{
+  font-size:15px;
+  line-height:1;
+}
+.icon-white{ color:#fff; }
+.icon-blue{ color:var(--accent2); }
 
 
 
